@@ -11,7 +11,7 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os, time
+import sys, os
 
 sys.path.append(os.path.abspath('.'))
 sys.path.append(os.path.abspath('./test_py_module'))
@@ -113,7 +113,6 @@ html_theme_options = {
     'header_color': 'FFFFFF',
     'header_background_color': '404040',
     'footer_text': 'Footer Text',
-    'build_datetime': time.strftime("%d/%m/%Y %H:%M"),
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
