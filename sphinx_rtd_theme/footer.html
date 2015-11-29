@@ -12,6 +12,14 @@
 
   <hr/>
 
+  {% if theme_footer_text != 'None' %}
+    <p>{{theme_footer_text}}</p>
+  {% endif %}
+
+  {% if theme_build_datetime != 'None' %}
+    <p>Built: {{theme_build_datetime}}</p>
+  {% endif %}
+
   <div role="contentinfo">
     <p>
     {%- if show_copyright %}

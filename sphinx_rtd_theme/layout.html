@@ -102,7 +102,7 @@
           </a>
 
           {% if theme_display_version %}
-            {%- set nav_version = version %}
+            {%- set nav_version = release %}
             {% if READTHEDOCS and current_version %}
               {%- set nav_version = current_version %}
             {% endif %}
@@ -143,6 +143,13 @@
 
       {# PAGE CONTENT #}
       <div class="wy-nav-content">
+
+        {% if theme_header_text != 'None' %}
+          <div style="background-color: #{{theme_header_background_color}}; text-align: center; color: #{{theme_header_color}}; margin-bottom: 20px; margin-top:0px; height:25px; line-height:25px;">
+              {{ theme_header_text }}
+          </div>
+        {% endif %}
+
         <div class="rst-content">
           {% include "breadcrumbs.html" %}
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">

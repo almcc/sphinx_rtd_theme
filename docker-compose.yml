@@ -1,0 +1,8 @@
+devbox:
+  build: .
+  ports:
+   - "1919:1919"
+   - "35729:35729"
+  volumes:
+    - ./:/home/developer/sphinx_almcc_theme
+  working_dir: /home/developer/sphinx_almcc_theme
