@@ -9,7 +9,7 @@ from sphinx_rtd_theme import __version__
 
 
 setup(
-    name='sphinx_rtd_theme',
+    name='sphinx_rtd_almcc_theme',
     version=__version__,
     url='https://github.com/snide/sphinx_rtd_theme/',
     license='MIT',
